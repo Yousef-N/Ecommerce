@@ -6,13 +6,13 @@ const cartStatusEnum = ["active", "completed"]
 export interface ICartItems { 
     product: IProduct;
     unitPrice: Number;
-    quantity: Number;
+    quantity:Number;
 }
 
 export interface ICart extends Document{
     userId: ObjectId| string;
     items: ICartItems[]
-    totalAmount: Number;
+    totalAmount: number;
     status: "active"| "completed"
 
 

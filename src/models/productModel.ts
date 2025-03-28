@@ -5,8 +5,8 @@ import mongoose, { Document, model, Schema } from "mongoose";
 export interface IProduct extends Document {
     title: string;
     image: string;
-    price: number;
-    stock: number;
+    price: Number;
+    stock: Number;
 }
 
 const productSchema = new Schema<IProduct>({
