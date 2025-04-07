@@ -57,6 +57,5 @@
   };
 
   const generateJWT = (data: any) => { 
-    return jwt.sign(data, 'TS1rBDgkb0jItrKasI8LOfnNTRiF04kG')
-
+    return jwt.sign(data, process.env.JWT_SECRET as string) 
   }
